@@ -1,0 +1,11 @@
+
+___________________________________________________________________
+EXC 5.6 
+Why is the "holder" variable is undefined but the code still work? 
+___________________________________________________________________
+EXC 5.9 
+The value of DD element can be changed in the html even though it does in cosnole
+___________________________________________________________________
+EXC 5.10
+I DON'T GET IT
+___________________________________________________________________
