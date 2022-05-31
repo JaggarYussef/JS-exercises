@@ -27,5 +27,21 @@
         "cerise",
     ];
 
-    // your code here
+ 
+    document.getElementById("run").addEventListener('click', () => {
+
+        let newFruits= [];
+        for(let i = 0 ; i < fruits.length; i++){
+            if(newFruits.includes(fruits[i])){
+                console.log("ffirst branch exed");
+                continue;
+            }else{
+                newFruits= fruits[i];
+                console.log("second branch exed");
+                
+            }
+            
+        }
+        console.log(newFruits);
+     })
 })();
