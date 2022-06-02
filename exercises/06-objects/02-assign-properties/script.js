@@ -26,5 +26,37 @@
         os: "linux",
         user: null,
     };
-    // your code here
+    
+
+
+     document.getElementById("run").addEventListener('click', ()  => {
+         console.log(typeof computers);
+         for(let i = 0; i < computers.length; i++){
+             let holder= computers[i];
+             console.log( holder);
+             if(holder){
+                if(holder.available == undefined ){
+                  //  console.log("exed1");
+
+                 holder.available = defaultProps.available;
+                 console.log(holder)
+                }
+                if(holder.os == undefined){
+                    //console.log("exed5");
+
+                    holder.os = defaultProps.os;
+                }
+                if(holder.user == undefined){
+                    //console.log("exed8");
+
+                    holder.user = defaultProps.user; 
+                }
+             
+             }
+
+            
+         }
+          console.info(computers);
+     })
+     
 })();
