@@ -19,8 +19,10 @@
 
     class Dog extends Animal {
         constructor(name, greeting){
+            super(name, greeting)
             this.name= name;
-            this.greeting= greeting
+            this.greeting= greeting;
+          
         }
 
     }
@@ -28,8 +30,10 @@
 
     class Cat  extends Animal {
         constructor(name, greeting){
+            super(name, greeting)
             this.name= name;
-            this.greeting= greeting
+            this.greeting= greeting;
+         
         }
 
     }
@@ -37,7 +41,10 @@
 
     document.getElementById("run").addEventListener('click', ()  => {
 
-       console 
+       cat= new Cat("kiity", "meow")
+       console.log(cat.sayHello())
+       dog= new Dog("doggy", "wof")
+       console.log(dog.sayHello());
           
     })
 

@@ -8,4 +8,7 @@ The value of DD element can be changed in the html even though it does in cosnol
 ___________________________________________________________________
 EXC 5.10
 I DON'T GET IT
+___________________________________________________________________$
+EXC 7.3
+Why Greetings is undefined and what's the reason we use this.constructor.greetings
 ___________________________________________________________________

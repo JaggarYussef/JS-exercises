@@ -10,5 +10,25 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+    let input= document.getElementById('pass-one');
+    let indicator= document.getElementById('validity');
+
+
+    input.addEventListener('input', () => {
+ 
+        
+     console.log();
+
+      if(input.value.length >= 8 && input.value.replace(/[^0-9]/g,"").length >= 2){
+      indicator.innerText = "ok"
+
+     }
+    })
+
+
+
+
+
+
 })();
