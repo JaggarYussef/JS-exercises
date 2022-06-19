@@ -8,7 +8,26 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+  }
+  
 (() => {
-    // your code here
+
+
+    document.getElementById('run').addEventListener('click', ()=> {
+        window.lib.getPosts( (err, posts) => {
+            window.lib.getComments(
+                posts[getRandomInt(5, 10)], 
+                function (err, comment) {
+                    console.log(comment);
+
+                }
+            )
+        });
+
+     
+    })
 })();
