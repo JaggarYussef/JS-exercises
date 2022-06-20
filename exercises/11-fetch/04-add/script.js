@@ -10,5 +10,30 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+     let nameHero = document.getElementById('hero-name').value;
+     let alter= document.getElementById('hero-alter-ego').value;
+     let powers= document.getElementById('hero-powers').value;
+     let push;
+    const link=  ' http://localhost:3000';
+
+
+
+    document.getElementById('run').addEventListener('click', ()=> {
+        console.log(nameHero);
+        push = [{id: 7, name: nameHero, alterEgo: alter, abilities:  powers }]
+        fetch(link + '/heroes', {
+            method: 'POST',
+           
+            body: JSON.stringify(push),
+        }).then(response => response.json())
+        .then(push => {
+            console.log('success', push);
+        })
+        .catch((error) => {
+            console.log('error', error);
+        })
+
+    })
+
 })();
