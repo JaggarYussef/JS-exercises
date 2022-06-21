@@ -9,6 +9,25 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(() => {
-    // your code here
+(() => {    
+
+    const link=  ' http://localhost:3000';
+    let holder;
+
+    document.getElementById('run').addEventListener('click', ()=> {
+        
+       fetch(link + '/heroes').then(response => {
+            response.json().then(json => {
+                console.log(json);
+                console.log(typeof json);
+                
+            })
+        })
+
+        
+  
+
+    })
+
+
 })();

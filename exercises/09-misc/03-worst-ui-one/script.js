@@ -10,5 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+  let rangeInput= document.getElementById("slider");
+  let target = document.getElementById("target");
+
+  rangeInput.addEventListener('click', () => {
+
+    
+    let difference= rangeInput.value - 0460000000;
+    console.log("range" + rangeInput.value);
+    console.log(difference);
+     
+     target.innerHTML= "+" + rangeInput.value;
+  })
 })();
